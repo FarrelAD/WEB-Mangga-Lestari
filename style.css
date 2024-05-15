@@ -1,0 +1,91 @@
+body {
+    font-family: 'Cabinet Grotesk', sans-serif;
+    margin: 0;
+    top: 0;
+    display: flex;
+    height: 1000px;
+    width: 100%;
+}
+
+header {
+    background-color: #FFEF0C;
+    height: 100%;
+    width: 18rem;
+    position: fixed;
+}
+
+header > h1 {
+    margin: 1.5rem;
+    font-weight: 900;
+}
+
+header > nav {
+    margin-top: 1rem;
+}
+
+header > nav > ul > li {
+    margin-bottom: 1rem;
+}
+
+header > nav > ul > li > a {
+    color: black
+}
+
+main {
+    margin: 2rem 3rem 5rem 22rem;
+}
+
+#hero {
+    margin: 1rem 0rem 2rem 0rem;
+    display: flex;
+}
+
+#hero-text-container {
+    margin: 2rem 1rem;
+    width: 50%;
+}
+
+#hero-text > h1 > span {
+    font-size: larger;
+    font-weight: 600;
+}
+
+#btn-beli-sekarang {
+    margin-top: 3rem;
+}
+
+#hero-img {
+    width: 50%;
+}
+
+#hero-img > img {
+    border-radius: 50%;
+    width: 70%;
+}
+
+#products {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+.products-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.img-card {
+    margin: 0rem 1rem;
+    height: 15rem;
+}
+
+.img-card > img {
+    height: 100%;
+}
+
+#customer-testimonials {
+    margin: 1rem 0rem 2rem 0rem;
+}
+
+footer {
+    height: 200px;
+    background-color: black;
+}
