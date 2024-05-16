@@ -4,7 +4,10 @@ body {
     top: 0;
     display: flex;
     height: 1000px;
-    width: 100%;
+}
+
+#contents {
+    margin-left: 18rem;
 }
 
 header {
@@ -12,6 +15,7 @@ header {
     height: 100%;
     width: 18rem;
     position: fixed;
+    z-index: 10;
 }
 
 header > h1 {
@@ -32,7 +36,7 @@ header > nav > ul > li > a {
 }
 
 main {
-    margin: 2rem 3rem 5rem 22rem;
+    padding: 4rem 3rem;
 }
 
 #hero {
@@ -86,6 +90,25 @@ main {
 }
 
 footer {
-    height: 200px;
+    position: relative;
+    height: 300px;
+    width: 100%;
     background-color: black;
+    color: white;
+    z-index: 1;
+}
+
+#footer-content-container {
+    padding: 2rem 3rem;
+}
+
+#copyright-section {
+    position: absolute;
+    bottom: 0;
+    padding: 2rem 3rem;
+}
+
+.white-border {
+    border: none;
+    border-top: 2px solid white;
 }
