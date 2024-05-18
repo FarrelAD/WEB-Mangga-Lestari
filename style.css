@@ -67,7 +67,7 @@ main {
     width: 70%;
 }
 
-#products {
+.products,  .customer-testimonials{
     margin: 1rem 0rem 2rem 0rem;
 }
 
@@ -85,11 +85,17 @@ main {
     height: 100%;
 }
 
-#customer-testimonials {
-    margin: 1rem 0rem 2rem 0rem;
+.testimonials {    
+    display: flex;
+    flex-direction: column;
+}
+
+.img-testi {
+    margin: 0 auto;
 }
 
 footer {
+    margin-top: 5rem;
     position: relative;
     height: 300px;
     width: 100%;
