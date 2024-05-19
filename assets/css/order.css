@@ -79,6 +79,19 @@ main > h1 {
     padding: .5rem 1rem;
 }
 
+.total-order-box {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    background-color: bisque;
+}
+
+.amount-order-input-box {
+    width: 50%;
+}
+
 footer {
     margin-top: 5rem;
     position: relative;
