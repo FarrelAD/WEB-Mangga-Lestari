@@ -47,15 +47,36 @@ main > h1 {
 }
 
 #first-row-catalog {
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .product-unit {
+    position: relative;
     width: 18rem;
+    height: 30rem;
 }
 
 .product-unit > img {
     width: 100%;
+}
+
+.cart-button {
+    background-color: #FF5100;
+    width: 20%;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.cart-button:hover {
+    cursor: pointer;
+}
+
+.item-cart {
+    margin: auto;
+    padding: .5rem 1rem;
 }
 
 footer {
