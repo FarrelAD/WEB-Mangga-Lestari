@@ -4,10 +4,6 @@ body {
     top: 0;
 }
 
-#contents {
-    margin-left: 18rem;
-}
-
 header {
     background-color: #FFEF0C;
     height: 100%;
@@ -33,13 +29,23 @@ header > nav > ul > li > a {
     color: black
 }
 
+#main-content {
+    margin-left: 18rem;
+}
+
 main {
-    padding: 4rem 3rem;
+    padding: 0rem 3rem;
+}
+
+.content {
+    height: 100vh;
 }
 
 #hero {
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #hero-text-container {
@@ -49,7 +55,8 @@ main {
 
 #hero-text > h1 > span {
     font-size: larger;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 48px;
 }
 
 #container-btn-beli-sekarang {
@@ -71,15 +78,17 @@ main {
 }
 
 #hero-img {
-    width: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 #hero-img > img {
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
 }
 
-.products,  .customer-testimonials{
+.products,  #customer-testimonials{
     margin: 1rem 0rem 2rem 0rem;
 }
 
