@@ -4,10 +4,11 @@ body {
     top: 0;
 }
 
-#contents {
-    margin-left: 18rem;
-}
 
+
+
+
+/****** HEADER ******/
 header {
     background-color: #FFEF0C;
     height: 100%;
@@ -16,9 +17,18 @@ header {
     z-index: 10;
 }
 
-header > h1 {
+header > a {
+    text-decoration: none;
+}
+
+#brand-name {
     margin: 1.5rem;
     font-weight: 900;
+    color: black;
+}
+
+#brand-name:hover {
+    text-decoration: underline;
 }
 
 header > nav {
@@ -33,13 +43,34 @@ header > nav > ul > li > a {
     color: black
 }
 
-main {
-    padding: 4rem 3rem;
+
+
+
+
+/****** MAIN ELEMENTS ******/
+#main-content {
+    margin-left: 18rem;
 }
 
+main {
+    padding: 0rem 3rem;
+}
+
+.content {
+    height: 100vh;
+}
+
+
+
+
+
+/****** FIRST CONTENT ******/
+/* MAIN */
 #hero {
-    margin: 1rem 0rem 2rem 0rem;
+    margin: 0rem 0rem 2rem 0rem;
     display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #hero-text-container {
@@ -49,7 +80,8 @@ main {
 
 #hero-text > h1 > span {
     font-size: larger;
-    font-weight: 600;
+    font-weight: bold;
+    font-size: 48px;
 }
 
 #container-btn-beli-sekarang {
@@ -68,18 +100,84 @@ main {
 
 #btn-beli-sekarang:hover {
     cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transition: background-color .5s ease, border .5s ease;
 }
 
 #hero-img {
-    width: 50%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
 }
 
 #hero-img > img {
     border-radius: 50%;
-    width: 70%;
+    width: 100%;
+    animation: pulse 2s infinite;
 }
 
-.products,  .customer-testimonials{
+@keyframes pulse {
+    0% {
+        outline: 1px solid #FFEF0C;
+        outline-offset: 1rem;
+    }
+    50% {
+        outline: 3px solid #FFEF0C;
+        outline-offset: 3rem;
+    }
+    70% {
+        outline: 2px solid #FFEF0C;
+        outline-offset: 4rem;
+    }
+    100% {
+        outline: 1px solid #FFEF0C;
+        outline-offset: 4.5rem;
+    }
+}
+
+
+
+
+
+/****** SECOND CONTENT ******/
+/* PRODUCTS EFFORT */
+.inner-section {
+    text-align: center;
+}
+
+.row-catalog {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.mango-type-img {
+    position: relative;
+}
+
+.mango-type-identifier {
+    position: absolute;
+    background-color: black;
+    color: white;
+    z-index: 3;
+    bottom: 0;
+    min-height: 2.5rem;
+    width: 100%;
+}
+
+.mango-type-identifier > p {
+    font-size: larger;
+}
+
+
+
+
+
+/****** THIRD CONTENT ******/
+/* TESTIMONIALS */
+.products,  #customer-testimonials{
     margin: 1rem 0rem 2rem 0rem;
 }
 
@@ -106,6 +204,50 @@ main {
     margin: 0 auto;
 }
 
+
+
+
+
+/****** FOURTH CONTENT ******/
+/* INVITATION TO BUY MANGO */
+#invitation-to-buy-mango {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#invitation-title {
+    text-align: center;
+}
+
+#container-btn-beli-sekarang-2 {
+    width: 40%;
+}
+
+#btn-beli-sekarang-2 {
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: .5rem 1rem;
+    font-size: large;
+}
+
+#btn-beli-sekarang-2:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transition: background-color .5s ease, border .5s ease;
+}
+
+
+
+
+
+/****** FOOTER ******/
 footer {
     margin-top: 5rem;
     position: relative;
