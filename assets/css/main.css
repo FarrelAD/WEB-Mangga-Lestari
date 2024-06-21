@@ -4,6 +4,11 @@ body {
     top: 0;
 }
 
+
+
+
+
+/****** HEADER ******/
 header {
     background-color: #FFEF0C;
     height: 100%;
@@ -29,6 +34,11 @@ header > nav > ul > li > a {
     color: black
 }
 
+
+
+
+
+/****** MAIN ELEMENTS ******/
 #main-content {
     margin-left: 18rem;
 }
@@ -41,6 +51,12 @@ main {
     height: 100vh;
 }
 
+
+
+
+
+/****** FIRST CONTENT ******/
+/* MAIN */
 #hero {
     margin: 0rem 0rem 2rem 0rem;
     display: flex;
@@ -75,6 +91,10 @@ main {
 
 #btn-beli-sekarang:hover {
     cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 3px solid black;
+    transition: background-color .5s ease, border .5s ease;
 }
 
 #hero-img {
@@ -86,8 +106,34 @@ main {
 #hero-img > img {
     border-radius: 50%;
     width: 100%;
+    animation: pulse 2s infinite;
 }
 
+@keyframes pulse {
+    0% {
+        outline: 1px solid #FFEF0C;
+        outline-offset: 1rem;
+    }
+    50% {
+        outline: 3px solid #FFEF0C;
+        outline-offset: 3rem;
+    }
+    70% {
+        outline: 2px solid #FFEF0C;
+        outline-offset: 4rem;
+    }
+    100% {
+        outline: 1px solid #FFEF0C;
+        outline-offset: 4.5rem;
+    }
+}
+
+
+
+
+
+/****** THIRD CONTENT ******/
+/* TESTIMONIALS */
 .products,  #customer-testimonials{
     margin: 1rem 0rem 2rem 0rem;
 }
@@ -115,6 +161,11 @@ main {
     margin: 0 auto;
 }
 
+
+
+
+
+/****** FOOTER ******/
 footer {
     margin-top: 5rem;
     position: relative;
